@@ -24,6 +24,7 @@ body,
 .information-section,
 .quote-section,
 .call-to-action-section,
+.call-to-action-text,
 .footer {
     display: flex;
     flex-direction: column;
@@ -75,6 +76,7 @@ button, .call-to-action-section {
     justify-content: flex-start;
     align-items: flex-start;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .hero-content-left .main-text {
@@ -89,12 +91,16 @@ button, .call-to-action-section {
     color: #E5E7EB;
 }
 
-.hero-content-right img {
+.hero-content-right {
     display: flex;
-    flex-direction: column;
+    flex: 2;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.hero-content-right img {
     width: auto;
     height: 300px;
-    flex: 2;
 }
 
 .hero-content-left .main-button {
@@ -103,4 +109,79 @@ button, .call-to-action-section {
     border-radius: 8px;
     width: 100px;
     justify-self: flex-end;
+}
+
+.information-section {
+    min-height: 15vh;
+}
+
+.information-section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 10px;
+}
+
+.information-section-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-section > * .quote, .quote-author{
+    display: flex;
+    color: #1F2937;
+}
+
+.quote-section {
+    min-height: 15vh;
+    padding: 50px;
+    margin: 50px 0 50px 0;
+}
+
+.quote > .some-quote {
+    font-size: 36px;
+    font-weight: 200;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+}
+
+.quote-author {
+    align-self: flex-end;
+    justify-self: flex-end;
+    font-weight: 500;
+}
+
+.call-to-action-section {
+    margin: 0 50px 50px 50px;
+    border-radius: 8px;
+    padding: 50px;
+    color: white;
+}
+
+.call-to-action-button {
+    justify-self: flex-end;
+    align-self: flex-end;
+
+}
+
+.call-to-action-signup {
+    padding: 10px;
+    border-radius: 8px;
+    border: solid white;
+    width: 100px;
+}
+
+.call-to-action-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.call-to-action-subtext {
+    margin-bottom: 0;
 }
