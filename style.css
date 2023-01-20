@@ -185,3 +185,9 @@ button, .call-to-action-section {
 .call-to-action-subtext {
     margin-bottom: 0;
 }
+
+.footer {
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
