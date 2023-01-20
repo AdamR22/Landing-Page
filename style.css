@@ -22,6 +22,7 @@ body,
 .hero,
 .hero-content-left,
 .information-section,
+.info-image-and-description,
 .quote-section,
 .call-to-action-section,
 .call-to-action-text,
@@ -69,6 +70,7 @@ button, .call-to-action-section {
     justify-content: center;
     align-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .hero-content-left {
@@ -95,10 +97,13 @@ button, .call-to-action-section {
     display: flex;
     flex: 2;
     justify-content: flex-end;
+    flex-wrap: wrap;
     margin-right: 30px;
 }
 
 .hero-content-right img {
+    display: flex;
+    flex-wrap: wrap;
     width: auto;
     height: 300px;
 }
@@ -113,6 +118,7 @@ button, .call-to-action-section {
 
 .information-section {
     min-height: 15vh;
+    flex-wrap: wrap;
 }
 
 .information-section-title {
@@ -127,8 +133,30 @@ button, .call-to-action-section {
 
 .information-section-images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-image-and-description {
+    flex-wrap: wrap;
+    flex: 1;
+    justify-items: center;
     align-items: center;
+}
+
+.info-image-and-description img {
+    height: 200px;
+    width: 200px;
+    border: solid #3882F6;
+    border-radius: 8px;
+}
+
+.info-image-and-description p {
+    height: 200px;
+    width: 200px;
+    text-align: center;
 }
 
 .quote-section > * .quote, .quote-author{
@@ -140,6 +168,7 @@ button, .call-to-action-section {
     min-height: 15vh;
     padding: 50px;
     margin: 50px 0 50px 0;
+    flex-wrap: wrap;
 }
 
 .quote > .some-quote {
