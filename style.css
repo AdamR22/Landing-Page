@@ -177,6 +177,7 @@ button, .call-to-action-section {
     flex-wrap: wrap;
     align-self: center;
     justify-self: center;
+    font-style: italic;
 }
 
 .quote-author {
